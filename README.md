@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/LPRW-Leviko%20Panel%20Railway-6366f1?style=for-the-badge" alt="LPRW"/>
+  <img src="https://img.shields.io/badge/LPRW-Leviko%20Panel%20Railway%20V1.0.0-6366f1?style=for-the-badge" alt="LPRW"/>
 </p>
 
 <p align="center">
