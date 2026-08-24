@@ -1,4 +1,4 @@
-"""LPRW v4 UI — dashboard + user portal."""
+"""LPRW v1 UI — dashboard + user portal."""
 
 DASHBOARD = r'''<!DOCTYPE html>
 <html lang="fa" dir="rtl" data-theme="dark">
@@ -114,7 +114,7 @@ th{color:var(--mu);font-weight:700;font-size:.73rem}
 }
 code{font-family:ui-monospace,monospace;font-size:.76rem;color:var(--pr2);word-break:break-all}
 
-/* LPRW Modern UI v4.11 — premium dashboard */
+/* LPRW Modern UI v1.0.0 — premium dashboard */
 :root{
   --bg:#070a10;--panel:#0f141d;--panel2:#151c27;--line:rgba(255,255,255,.075);
   --text:#f4f7fb;--muted:#8995a8;--accent:#7c5cff;--orange:#ff8a1f;
@@ -163,7 +163,7 @@ button:active,.btn:active{transform:translateY(0) scale(.98)}
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.45 11.45 0 0 1 6-.01c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
   </a>
   <div class="login-card">
-    <div class="login-logo-wrap"><img src="https://avatars.githubusercontent.com/u/316735646?v=4" alt="LPRW Logo"><span class="login-version">نسخه پنل v4.12.0</span></div>
+    <div class="login-logo-wrap"><img src="https://avatars.githubusercontent.com/u/316735646?v=4" alt="LPRW Logo"><span class="login-version">نسخه پنل v1.0.0</span></div>
     <h1>ورود به پنل</h1>
     <p class="sub">LPRW · مدیریت پروکسی</p>
     <div class="field"><label>نام کاربری</label><input id="lu" value="" placeholder="نام کاربری را وارد کنید" autocomplete="username"></div>
@@ -176,7 +176,7 @@ button:active,.btn:active{transform:translateY(0) scale(.98)}
 <div id="app">
 <div class="shell">
   <aside class="side">
-    <div class="logo"><div class="brand-mark" aria-label="LPRW"><span>L</span><i></i></div><div><h2 id="side-name">LPRW</h2><small id="side-ver">v4</small></div></div>
+    <div class="logo"><div class="brand-mark" aria-label="LPRW"><span>L</span><i></i></div><div><h2 id="side-name">LPRW</h2><small id="side-ver">v1</small></div></div>
     <div class="nav-item active" data-page="home" onclick="go('home')"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5"/><path d="M9.5 21v-6h5v6"/></svg></span>داشبورد</div>
     <div class="nav-item" data-page="links" onclick="go('links')"><span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2"/><path d="M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"/></svg></span>لینک‌ها</div>
     <div class="nav-item" data-page="inbounds" onclick="go('inbounds')"><span class="nav-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h3"/></svg></span>پروتکل و اینباند</div>
@@ -191,7 +191,7 @@ button:active,.btn:active{transform:translateY(0) scale(.98)}
   </aside>
   
 <main class="main">
-    <div class="topbar"><h1 id="page-title">داشبورد</h1><div class="top-brand"><img src="https://avatars.githubusercontent.com/u/316735646?v=4" alt="LPRW Logo"><div><b id="top-name">LPRW</b><small id="top-ver">v4.11</small></div></div><div class="acts" id="top-acts"></div></div>
+    <div class="topbar"><h1 id="page-title">داشبورد</h1><div class="top-brand"><img src="https://avatars.githubusercontent.com/u/316735646?v=4" alt="LPRW Logo"><div><b id="top-name">LPRW</b><small id="top-ver">v1.0.0</small></div></div><div class="acts" id="top-acts"></div></div>
 
     <section id="pg-home">
       <div class="dashboard-hero">
