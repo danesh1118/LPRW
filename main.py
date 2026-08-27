@@ -1,5 +1,5 @@
 """
-LPRW — Leviko Panel Railway v4.0
+LPRW — Leviko Panel Railway v1.0
 Multi-protocol gateway: VLESS / Trojan / Shadowsocks
 Transport: WebSocket only
 Inbound-based config management.
