@@ -9,6 +9,8 @@ import socket
 import struct
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM, ChaCha20Poly1305
+from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+from cryptography.hazmat.primitives import hashes
 from fastapi import WebSocket, WebSocketDisconnect
 
 from protocol.common import RELAY_BUF, WRITE_HIGH_WATER, QuotaGate, open_tcp, tune_socket
@@ -156,8 +158,8 @@ async def handle_ss_ws(ws, link_id, is_allowed, on_usage, register_conn, unregis
 
         salt = raw[:32]
         rest = raw[32:]
-        # session key from salt + master key
-        session_key = hashlib.sha256(salt + key).digest()
+        # Shadowsocks AEAD subkey derivation (RFC5869 HKDF-SHA1)
+        session_key = HKDF(algorithm=hashes.SHA1(), length=32, salt=salt, info=SALSA_SUBKEY).derive(key)
         dec = _SSStream(method, session_key, encrypt=False)
         enc = _SSStream(method, session_key, encrypt=True)
         # prepend salt to first response path not needed for server
